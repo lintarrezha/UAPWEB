@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 70%;
+      margin-bottom: 50px;
+    }
+
+    table,
+    th,
+    td {
+      border: 2px solid black;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    form {
+      display: grid;
+      gap: 10px;
+    }
+
+    form label,
+    form input {
+      grid-column: span 2;
+      width: 35%;
+      padding: 4px;
+      border-radius: 5px;
+      border-color: gainsboro;
+    }
+
+    form button {
+      grid-column: span 3;
+      width: 10%;
+      background-color: rgb(155, 255, 255);
+      border-color: gainsboro;
+      border-radius: 7px;
+      padding: 4px;
+    }
+  </style>
+  <h1>Transaction</h1>
+  <h2>Daftar Barang</h2>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nama</th>
+      <th>Harga</th>
+    </tr>
+  </table>
+
+  <h2>Inputan User</h2>
+  <form onsubmit="tambahTransaksi(event)">
+    <label for="idInput">Input ID</label>
+    <input type="number" , id="idInput" , min="1" placeholder="masukan id barang" , required />
+    
+    <label for="quantityInput">Banyaknya barang</label>
+    <input type="number" , id="quantityInput" , min="1" , placeholder="masukan jumlah barang" , required />
+
+    <button type="submit">submit</button>
+  </form>
+
+  <script>
+    'app.js';
+  </script>
+
+  <body></body>
+</html>
